@@ -3,5 +3,5 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
 
   has_many :tasks
-  has_many :rooms
+  has_many :rooms, through: :tasks
 end
