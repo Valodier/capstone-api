@@ -1,0 +1,7 @@
+@rooms.map do |room|
+  {
+    id: room.id,
+    name: room.name,
+    image: room.bgimage
+  }
+end
