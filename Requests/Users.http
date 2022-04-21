@@ -9,5 +9,3 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
-
-#### ADD SESSIONS REQUESTS AND ADD JWT AUTH ####

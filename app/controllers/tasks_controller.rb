@@ -8,7 +8,9 @@ class TasksController < ApplicationController
   def create
     @task = Task.create!(
       title: params["title"],
-      description: params["description"]
+      description: params["description"],
+      user_id: current_user.id,
+      room_id: params["room_id"]
     )
 
     if @task.save

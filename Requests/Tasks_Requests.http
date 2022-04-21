@@ -1,0 +1,13 @@
+###Tasks Index
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTA2NTQxMTF9.CXDF8nVThd6saSNHOASJP9-91YOo-MvXrsNmoycLUK4
+GET http://localhost:3000/tasks.json
+
+###Tasks Create
+POST http://localhost:3000/tasks.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "title": "Clean Room",
+  "description": "Pick up clothes, vacuum, bring out dirty dishes,"
+}
