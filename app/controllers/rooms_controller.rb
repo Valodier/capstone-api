@@ -19,7 +19,9 @@ class RoomsController < ApplicationController
   end
 
   def show
-    
+    room_id = params[:id]
+    @room = Room.find_by(id: room_id)
+    render :show
   end
 
   def update

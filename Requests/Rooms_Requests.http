@@ -1,0 +1,14 @@
+###Rooms Index
+GET http://localhost:3000/rooms.json
+
+###Rooms Create
+POST http://localhost:3000/rooms.json
+Content-Type: application/json
+
+{
+  "name" : "Living Room",
+  "bgimage" : "Image of room goes here"
+}
+
+###Rooms Show
+GET http://localhost:3000/rooms/1.json
