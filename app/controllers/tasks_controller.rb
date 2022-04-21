@@ -22,7 +22,9 @@ class TasksController < ApplicationController
   end
 
   def show
-    
+    task_id = params(:id)
+    @task = Task.find_by(id: task_id)
+    index :show
   end
 
   def update
