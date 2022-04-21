@@ -4,7 +4,7 @@
     name: room.name,
     image: room.bgimage,
     status: room.status,
-    created_at: @room.created_at,
-    updated_at: @room.updated_at
+    created_at: room.created_at,
+    updated_at: room.updated_at
   }
 end

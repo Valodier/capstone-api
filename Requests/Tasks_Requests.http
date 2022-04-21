@@ -9,5 +9,7 @@ Content-Type: application/json
 
 {
   "title": "Clean Room",
-  "description": "Pick up clothes, vacuum, bring out dirty dishes,"
+  "description": "Pick up clothes, vacuum, bring out dirty dishes",
+  "user_id": 1,
+  "room_id": 1
 }
