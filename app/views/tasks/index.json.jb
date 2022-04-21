@@ -1,0 +1,11 @@
+@tasks.map do |task|
+  {
+    id: task.id,
+    title: task.title,
+    status: task.status,
+    user_id: task.user_id,
+    room_id: task.room_id,
+    description: task.description,
+
+  }
+end

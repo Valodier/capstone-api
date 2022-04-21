@@ -2,6 +2,7 @@
   {
     id: room.id,
     name: room.name,
-    image: room.bgimage
+    image: room.bgimage,
+    status: room.status
   }
 end
