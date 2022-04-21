@@ -6,7 +6,7 @@ POST http://localhost:3000/rooms.json
 Content-Type: application/json
 
 {
-  "name" : "Living Room",
+  "name" : "Hallway",
   "bgimage" : "Image of room goes here"
 }
 

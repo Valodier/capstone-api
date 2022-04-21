@@ -1,5 +1,6 @@
-###Tasks Index
 @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTA2NTQxMTF9.CXDF8nVThd6saSNHOASJP9-91YOo-MvXrsNmoycLUK4
+
+###Tasks Index
 GET http://localhost:3000/tasks.json
 
 ###Tasks Create
@@ -8,10 +9,10 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "title": "Clean Room",
-  "description": "Pick up clothes, vacuum, bring out dirty dishes",
-  "user_id": 1,
-  "room_id": 1
+  "title": "Move Furniture",
+  "description": "Move TV stand to west wall, re-align couches/seats/tables square to tv stand",
+  "user_id": 2,
+  "room_id": 3
 }
 
 ###Tasks Show
