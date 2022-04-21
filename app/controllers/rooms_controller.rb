@@ -14,7 +14,7 @@ class RoomsController < ApplicationController
     if @room.save
       render :show
     else
-      render json: {errors: @room.error.full_messages}, status: 422
+      render json: {errors: @room.errors.full_messages}, status: 422
     end
   end
 
@@ -25,7 +25,19 @@ class RoomsController < ApplicationController
   end
 
   def update
-    
+    room_id = params[:id]
+    @room = Room.find_by(id: room_id)
+
+    @room.name = params["name"] || @room.name
+    @room.status = params["status"] || @room.status
+    @room.bgimage = params["bgimage"] || @room.bgimage
+
+    if @room.save
+      render :show
+    else
+      render json: {errors: @room.errors.full_messages}, status: 422
+    end
+
   end
   
 end
