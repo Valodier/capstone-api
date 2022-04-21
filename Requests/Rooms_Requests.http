@@ -6,7 +6,7 @@ POST http://localhost:3000/rooms.json
 Content-Type: application/json
 
 {
-  "name" : "Hallway",
+  "name" : "Hallway 2",
   "bgimage" : "Image of room goes here"
 }
 
@@ -19,5 +19,5 @@ PATCH http://localhost:3000/rooms/1.json
 Content-Type: application/json
 
 {
-  "bgimage": "Room image goes here"
+  "bgimage": "On image goes here"
 }

@@ -28,8 +28,8 @@ class TasksController < ApplicationController
   end
 
   def update
-    task_id = params(:id)
-    @task = Taks.find_by(id: task_id)
+    task_id = params[:id]
+    @task = Task.find_by(id: task_id)
 
     @task.title = params["title"] || @task.title
     @task.description = params["description"] || @task.description

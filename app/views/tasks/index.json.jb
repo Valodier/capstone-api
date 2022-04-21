@@ -6,7 +6,7 @@
     status: task.status,
     user_id: task.user_id,
     room_id: task.room_id,
-    created_at: @task.created_at,
-    updated_at: @task.updated_at
+    created_at: task.created_at,
+    updated_at: task.updated_at
   }
 end

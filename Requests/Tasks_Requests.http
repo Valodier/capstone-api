@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTA2NTQxMTF9.CXDF8nVThd6saSNHOASJP9-91YOo-MvXrsNmoycLUK4
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NTA2NTk4MjV9.h8LSXoa0RyKhgSk0lKwDRlnvGpSk5lVVsW8Mo3FRRd4
 
 ###Tasks Index
 GET http://localhost:3000/tasks.json
@@ -19,12 +19,12 @@ Content-Type: application/json
 GET http://localhost:3000/tasks/1.json
 
 ###Tasks Update
-PATCH http://localhost:3000/tasks/1.json
+PATCH http://localhost:3000/tasks/2.json
 Content-Type: application/json
 
 {
-  "task.title": "title",
-  "task.description": "description",
-  "task.user_id": "user_id",
-  "task.room_id": "room_id"
+  "title": "something else",
+  "description": "description",
+  "user_id": "1",
+  "room_id": "2"
 }
