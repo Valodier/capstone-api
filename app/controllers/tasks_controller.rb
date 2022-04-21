@@ -9,7 +9,7 @@ class TasksController < ApplicationController
     @task = Task.create!(
       title: params["title"],
       description: params["description"],
-      user_id: current_user.id,
+      user_id: params["user_id"],
       room_id: params["room_id"]
     )
 
