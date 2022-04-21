@@ -6,6 +6,5 @@
     user_id: task.user_id,
     room_id: task.room_id,
     description: task.description,
-
   }
 end
