@@ -22,13 +22,25 @@ class TasksController < ApplicationController
   end
 
   def show
-    task_id = params(:id)
+    task_id = params[:id]
     @task = Task.find_by(id: task_id)
-    index :show
+    render :show
   end
 
   def update
-    
+    task_id = params(:id)
+    @task = Taks.find_by(id: task_id)
+
+    @task.title = params["title"] || @task.title
+    @task.description = params["description"] || @task.description
+    @task.user_id = params["user_id"] || @task.user_id
+    @task.room_id = params["room_id"] || @task.room_id
+
+    if @task.save
+      render :show
+    else
+      render json: {errors: @task.errors.full_messages}, status: 422
+    end
   end
 
 end

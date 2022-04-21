@@ -13,3 +13,17 @@ Content-Type: application/json
   "user_id": 1,
   "room_id": 1
 }
+
+###Tasks Show
+GET http://localhost:3000/tasks/1.json
+
+###Tasks Update
+PATCH http://localhost:3000/tasks/1.json
+Content-Type: application/json
+
+{
+  "task.title": "title",
+  "task.description": "description",
+  "task.user_id": "user_id",
+  "task.room_id": "room_id"
+}
