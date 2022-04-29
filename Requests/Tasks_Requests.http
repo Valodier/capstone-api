@@ -19,7 +19,7 @@ Content-Type: application/json
 GET http://localhost:3000/tasks/1.json
 
 ###Tasks Update
-PATCH http://localhost:3000/tasks/2.json
+PATCH http://localhost:3000/tasks/3.json
 Content-Type: application/json
 
 {
