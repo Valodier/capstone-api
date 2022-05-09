@@ -35,6 +35,7 @@ class TasksController < ApplicationController
     @task.description = params["description"] || @task.description
     @task.user_id = params["user_id"] || @task.user_id
     @task.room_id = params["room_id"] || @task.room_id
+    @task.status = params["status"] || @task.status
 
     if @task.save
       render :show
