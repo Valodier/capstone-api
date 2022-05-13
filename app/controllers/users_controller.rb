@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   
   def index
-    render json: User.all
+    @users = User.all
+    render :index
   end
   
   
