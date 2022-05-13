@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   patch "/tasks/:id" => "tasks#update"
   
   # Users
+  get "/users" => "users#index"
   post "/users" => "users#create"
 
   # Sessions
