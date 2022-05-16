@@ -1,3 +1,4 @@
 Want to be able to assign a task to a person.
+Requires a groupid and automatically incrementing integer for each group, ideally on large enough scale this would be similiar to a jwt? Like a unique id with letters and numbers so random people cant add themselves to groups
 
-Need to configure CORS when I start frontend work
+This would get mined so hard for the data. God, selling cleaning producs? Furniture? Ads galore on something like this.

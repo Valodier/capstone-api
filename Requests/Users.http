@@ -11,3 +11,6 @@ Content-Type: application/json
 
 ### Users Index
 GET http://localhost:3000/users.json
+
+### Users Show
+GET http://localhost:3000/users/1.json

@@ -4,6 +4,12 @@ class UsersController < ApplicationController
     @users = User.all
     render :index
   end
+
+  def show
+    user_id = params[:id]
+    @user = User.find_by(id: user_id)
+    render :show 
+  end
   
   
   def create

@@ -1,7 +1,9 @@
 {
   id: @user.id,
+  name: @user.name,
   tasks: @user.tasks,
-  rooms: @user.rooms
+  rooms: @user.rooms,
+  group: @user.group_id,
   created_at: @user.created_at,
   updated_at: @user.updated_at
 }
